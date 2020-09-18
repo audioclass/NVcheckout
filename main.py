@@ -14,8 +14,6 @@ cartUrl = (
 pollFrequency = 0
 
 
-# async def buy():
-# await chrome.get(cartUrl)
 def openbrowser():
     chrome = webdriver.Chrome()
     return chrome
