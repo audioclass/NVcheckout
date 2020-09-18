@@ -4,9 +4,10 @@ from selenium import webdriver
 
 delayInSeconds = 0.5
 productIdentifier = "5438481700"
+apikey = "9485fa7b159e42edb08a83bde0d83dia"
 apiUrl = (
-    "https://api.digitalriver.com/v1/shoppers/me/products/{pID}/inventory-status?apiKey=9485fa7b159e42edb08a83bde0d83dia".format(
-        pID=str(productIdentifier)))
+    "https://api.digitalriver.com/v1/shoppers/me/products/{pID}/inventory-status?apiKey={api}".format(
+        pID=str(productIdentifier), api=apikey))
 cartUrl = (
     "https://store.nvidia.com/store/nvidia/en_US/buy/productID.{pID}/clearCart.yes/nextPage.QuickBuyCartPage".format(
         pID=str(productIdentifier)))
