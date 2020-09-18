@@ -1,7 +1,6 @@
 import time
-
-from selenium import webdriver
 import requests
+from selenium import webdriver
 
 delayInSeconds = 0.5
 productIdentifier = "5438481700"
